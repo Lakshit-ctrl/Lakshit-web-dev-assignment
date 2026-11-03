@@ -1,0 +1,28 @@
+{
+  "name": "lakshit-web-dev-assignment",
+  "version": "1.0.0",
+  "description": "Lakshit - Web Dev Assignment",
+  "main": "backend/src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/src/index.js",
+    "dev": "nodemon backend/src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lakshit-ctrl/lakshit-web-dev-assignment.git"
+  },
+  "author": "Lakshit <lakshitprajapat2008@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lakshit-ctrl/lakshit-web-dev-assignment/issues"
+  },
+  "homepage": "https://github.com/lakshit-ctrl/lakshit-web-dev-assignment#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "mongoose": "^8.18.3",
+    "nodemon": "^3.1.10"
+  }
+}

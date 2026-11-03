@@ -1,0 +1,63 @@
+### Environment Variable
+@baseUrl = http://localhost:4000/api/v1
+
+### ----------------------------------------------------
+### USER AUTHENTICATION ENDPOINTS
+### ----------------------------------------------------
+
+### 1. Register a New User
+POST {{baseUrl}}/users/register
+Content-Type: application/json
+
+{
+  "username": "lakshit",
+  "email": "lakshitprajapat2008@gmail.com",
+  "password": "securePassword123"
+}
+
+### 2. Login User
+POST {{baseUrl}}/users/login
+Content-Type: application/json
+
+{
+  "email": "lakshitprajapat2008@gmail.com",
+  "password": "securePassword123"
+}
+
+### 3. Logout User
+POST {{baseUrl}}/users/logout
+Content-Type: application/json
+
+{
+  "email": "lakshitprajapat2008@gmail.com"
+}
+
+
+### ----------------------------------------------------
+### POST CRUD ENDPOINTS
+### ----------------------------------------------------
+
+### 4. Create a Post
+POST {{baseUrl}}/posts/create
+Content-Type: application/json
+
+{
+  "name": "Lakshit",
+  "description": "Learning Express.js and Node.js backend architecture - Lakshit Web Dev Assignment",
+  "age": 18
+}
+
+### 5. Get All Posts
+GET {{baseUrl}}/posts/getPosts
+
+### 6. Update a Post (replace {{postId}} with actual ID from create/getPosts)
+@postId = 6725dc01e3b5e4001a123456
+PATCH {{baseUrl}}/posts/update/{{postId}}
+Content-Type: application/json
+
+{
+  "description": "Updated assignment post description by Lakshit"
+}
+
+### 7. Delete a Post (replace {{postId}} with actual ID)
+DELETE {{baseUrl}}/posts/delete/{{postId}}
